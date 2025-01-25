@@ -1,0 +1,32 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+
+\lipsum[1]
+
+\begin{figure}[!ht] \label{fig:placeholder}  
+    \centering
+    \includegraphics{images/placeholder.jpg}
+    \caption{placeholder caption}
+\end{figure}
+
+\lipsum[2]
+
+This is a reference to a figure in the same section: \imref{fig:placeholder}.
+
+This is a reference to a bibtex article, there's various citation methods: 
+
+\noindent
+\cite{texbook} 
+
+\noindent
+\citeauthor{texbook} 
+
+\noindent
+\textcite{texbook}
+
+% This is a custom command, defined in main.tex
+\noindent
+\ncite{texbook}
+
+\end{document}

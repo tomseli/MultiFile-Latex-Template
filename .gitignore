@@ -1,0 +1,12 @@
+# Latex build files
+*.pdf
+*.synctex.gz
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.run.xml
+*.bbl
+*.bbl-SAVE-ERROR
+*.bcf
+*.toc

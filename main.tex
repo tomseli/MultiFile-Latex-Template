@@ -1,0 +1,39 @@
+\documentclass[11pt]{article}
+\usepackage{lipsum}
+\usepackage{graphicx}
+\usepackage[style=apa,backend=biber]{biblatex}
+\addbibresource{refs.bib}
+
+% IMPORTANT: Load last
+\usepackage{subfiles}
+
+% CUSTOM COMMANDS
+% "normal cite" adds parentheses around intext citation
+\newcommand{\ncite}[1]{(\cite{#1})}
+% "image reference" adds Figure in front of the command, and "ties" the word 
+% Figure to the reference number, avoiding a line break in the middle.
+\newcommand{\imref}[1]{Figure~\ref{#1}}
+
+\title{Template}
+\author{Author}
+\date{\today}
+
+\begin{document}
+\maketitle
+\pagebreak
+
+\tableofcontents
+\pagebreak
+
+\section{Section 1}\label{sec:section1}
+\subfile{sections/section_1.tex}
+\pagebreak
+
+
+\section{Section 2}\label{sec:section2}
+\subfile{sections/section_2.tex}
+\pagebreak
+
+\printbibliography[]
+
+\end{document}
