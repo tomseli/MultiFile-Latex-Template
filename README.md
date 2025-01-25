@@ -1,10 +1,10 @@
 A simple multfile LaTeX example project. 
 
-Typically each .tex file generates some (enormous) amount of build files. I'd highly recommend configuring whatever latex compiler you are using to _not_ dump these files into the root directory, and instead to dump them in a folder like `/build`.
+Typically each .tex file generates some (enormous) amount of build files. I'd highly recommend configuring whatever LaTeX compiler you are using to _not_ dump these files into the root directory, and instead to dump them in a folder like `/build`.
 
-In VSCode, using [Latex Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop), you can configure the build directory with the following steps:
+In VSCode, using [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop), you can configure the build directory with the following steps:
 - Open settings (`Ctrl + ,`)
-- In the search bar type in `@ext:james-yu.latex-workshop` (this _should_ autofill if you have installed Latex Workshop correctly)
+- In the search bar type in `@ext:james-yu.latex-workshop` (this _should_ autofill if you have installed LaTeX Workshop correctly)
 - In the search bar add `out dir`. Your final search command should be `@ext:james-yu.latex-workshop out dir`
 - In the setting `Latex Workshop > Latex: Out Dir` add `/build`, making the setting `%DIR%/build`
 
